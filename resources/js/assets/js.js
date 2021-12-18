@@ -1,0 +1,54 @@
+
+
+$(function(){
+    $('.bl1').hover(function(){
+        $('.ent1').toggleClass('act');
+    });
+    $('.bl2').hover(function(){
+        $('.ent2').toggleClass('act');
+    });
+    $('.bl3').hover(function(){
+        $('.ent3').toggleClass('act');
+    });
+    $('.bigger').click(function(){
+        $('.roll').toggleClass('move');
+        $('.date').toggleClass('colorchange');
+    });
+    $('.pr1').hover(function(){
+        $('.nm1').toggleClass('white');
+        $('.gen1').toggleClass('white');
+        $('.sec1').toggleClass('white');
+        $('.dol1').toggleClass('white');
+        $('.st1').toggleClass('changes');
+        $('.pr1').toggleClass('bgblue');
+    });
+    $('.pr2').hover(function(){
+        $('.nm2').toggleClass('white');
+        $('.gen2').toggleClass('white');
+        $('.sec2').toggleClass('white');
+        $('.dol2').toggleClass('white');
+        $('.st2').toggleClass('changes');
+        $('.pr2').toggleClass('bgblue');
+    });
+    $('.pr3').hover(function(){
+        $('.nm3').toggleClass('white');
+        $('.gen3').toggleClass('white');
+        $('.sec3').toggleClass('white');
+        $('.dol3').toggleClass('white');
+        $('.st3').toggleClass('changes');
+        $('.pr3').toggleClass('bgblue');
+    });
+});
+$(function(){
+    $('.burger').click(function(){
+        $('.burger').toggleClass('burger_active');
+    });
+    $('.burger').click(function(){
+        $('.menu_ul').toggleClass('active');
+    });
+    $('.menu_ul').click(function(){
+        $('.menu_ul').removeClass('active');
+        $('.burger').removeClass('burger_active');
+    });
+
+});

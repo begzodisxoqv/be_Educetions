@@ -1,0 +1,717 @@
+a{
+    text-decoration: none!important;
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    height: 100vh;
+    /* background: url(../img/qwerty123.jpg) no-repeat center center / cover; */
+}
+nav{
+    padding-top: 24px;
+}
+
+
+.burger {
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 100000000;
+    margin-right: 40px;
+    margin-top: 3px;
+    right: 0;
+}
+
+.burger__line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    left: 0;
+    position: absolute;
+    transition: 0.3s all linear;
+    display:  none;
+}
+
+.burger__line_first {
+    top: 0;
+}
+
+.burger__line_second,
+.burger__line_third {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line_fourth {
+    bottom: 0;
+}
+
+.burger_active .burger__line_first,
+.burger_active .burger__line_fourth {
+    opacity: 0;
+}
+
+.burger_active .burger__line_second {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.burger_active .burger__line_third {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+
+.logo{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+color: #FFFFFF;
+text-transform: uppercase;
+transition: 0.5s;
+}
+.logo:hover{
+    text-shadow: 0px 5px 10px black;
+    color: white;
+}
+.links{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+margin-right: 20px;
+transition: 0.5s;
+}
+.links:hover{
+    text-shadow: 0px 5px 10px black;
+    color: white;
+}
+.mt{
+    margin-top: 20px;
+}
+.divvi{
+    padding: 7px;
+background: #FFFFFF;
+border-radius: 30px;
+color: #2370C8;
+}
+input{
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #2370C8;
+}
+
+
+
+.h1{
+    font-family: 'Roboto';
+font-size: 72px;
+line-height: 85px;
+color: #FFFFFF;
+width: 465px;
+}
+
+.head-info{
+    margin-top: 172px;
+}
+.info-txt{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 27px;
+color: #FAFAFA;
+width: 443px;
+margin-top: 26px;
+}
+
+.learn{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 80px;
+color: #FFFFFF;
+padding: 19px 33px;
+background: #2370C8;
+border-radius: 30px;
+transition: 0.5s;
+}
+.learn:hover{
+    text-shadow: 0px 5px 10px black;
+    color: white;
+}
+.service{
+    margin-top: 201px;
+}
+.our{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.15em;
+color: #2370C8;
+text-align: center;
+}
+
+h3{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+color: #262A4E;
+text-align: center;
+margin-bottom: 20px;
+}
+.blocks{
+    margin-top: 69px;
+    margin-bottom: 222px;
+}
+.block{
+    width: 31%;
+height: 337px;
+background: #E5F3FE;
+border: 3px solid #CFEAFF;
+box-sizing: border-box;
+transition: all  0.5s;
+position: relative;
+}
+.block:hover{
+background: #FFFFFF;
+border: 2px solid #2370C8;
+box-sizing: border-box;
+box-shadow: 0px 4px 12px #D2EBFF;
+height: 316px;
+}
+.img{
+    margin: 39px 0 25px;
+}
+.gentit{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: #262A4E;
+}
+.sectit{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #646464;
+}
+
+.ent{
+padding: 5px 12px;
+background: #2370C8;
+box-shadow: 0px 8px 20px rgba(35, 112, 200, 0.32);
+font-size: 20px;
+border-radius: 50%;
+color: white;
+position: absolute;
+bottom: -6%;
+display: none;
+}
+.act{
+    display: block;
+}
+.white{
+    color: white;
+}
+.controls{
+    width: 119px;
+    margin-left: 100px;
+    
+}
+.but{
+    color: rgb(139, 139, 139);
+    padding: 0 15px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.but:hover{
+    background: #2370C8;
+    box-shadow: 0px 4px 24px rgba(35, 112, 200, 0.24);
+    color: white;
+}
+.but2{
+    margin-left: 29px;
+}
+.inner{
+    margin-left: auto;
+}
+.left{
+height: 514px;
+background: #E7E7E7;
+background-image: url(https://images.app.goo.gl/yrXeVkoJbNzXE8mC8);
+}
+.ourtxt{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.15em;
+color: #2370C8;
+}
+.tit{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+color: #262A4E;
+margin-bottom: 20px;
+}
+.abouttxt{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #646464;
+}
+.place{
+    margin-top: 20px;
+}
+
+.about{
+    margin-bottom: 270px;
+}
+
+.lemon{
+    background: #F2F9FF;
+    height: max-content;
+    padding: 82px 0;
+    margin-bottom: 180px;
+}
+
+.innerplace{
+    border: 3px solid white;
+    margin:auto;
+}
+.cardi{
+    margin: auto;
+    width: 32%;
+}
+.regtangle{
+    background: #E7E7E7;
+    height: 343px;
+    width: 32%;
+    margin-bottom: 25px;
+}
+.carousel2{
+    margin: auto;
+    margin-top: 42px;
+}
+
+.control2{
+    width: max-content;
+    margin: auto;
+}
+.mb{
+    
+    margin-bottom: 180px;
+}
+.but2{
+    height: 43px;
+    width: 43px;
+}
+.butt3{
+    margin: 0;
+}
+.teachers{
+    background: #F2F9FF;
+    padding: 92px 0 117px;
+    margin-bottom: 180px;
+}
+.trener{
+    height: 450px;
+    width: 32%;
+background: #E7E7E7;
+}
+.name{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 25px;
+text-align: center;
+color: #262A4E;
+}
+.prof{
+    font-size: 15px;  
+}
+.bigger{
+    width: 52px;
+height: 23px;
+background: #2370C8;
+border-radius: 10px;
+box-shadow: 0px 0px 5px 1px rgb(100, 100, 100);
+margin: 0 12px;
+}
+.roll{
+    width: 26px;
+height: 26px;
+background: #FFFFFF;
+box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.42);
+border-radius: 50%;
+transition: all 0.5s;
+}
+.move{
+    transform: translateX(100%);
+}
+.date{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: #262A4E;
+transition: 0.5s;
+}
+.colorchange{
+    color: #2370C8;
+}
+.pricecard{
+    background: #FFFFFF;
+box-shadow: 0px 8px 48px rgba(185, 215, 238, 0.4);
+width: 32%;
+padding: 45px 0;
+transition: 0.5s;
+}
+.dol{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 41px;
+color: #2370C8;
+transition: 0.5s;
+}
+.start{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+padding: 11px 36px 12px 28px;
+background: #2370C8;
+border-radius: 30px;
+margin-top: 33px;
+transition: 0.5s;
+}
+.white{
+    color: white;
+}
+.changes{
+    color:#2370C8 ;
+    background: white;
+}
+.bgblue{
+    background: #2370C8;
+}
+h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+}
+.moreblue{
+    background: rgba(55, 130, 215, 0.9);
+}
+.clients{
+    padding: 132px 0 84px;
+}
+.client{
+    width: 48%;
+    margin-top: 44px;
+    background: rgba(55, 130, 215, 0.5);
+border: 1px solid #6AB0FF;
+box-sizing: border-box;
+padding: 52px 0 48px;
+}
+.circle{
+    width: 68px;
+height: 68px;
+background: #E7E7E7;
+border-radius: 50%;
+}
+.clname{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+margin-bottom: 4px;
+margin-top: 20px;
+}
+.clprof{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+}
+.clabout{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #F2F2F2;
+}
+.foot-logo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #2370C8;
+}
+.foot-info{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+
+color: #646464;
+}
+.footul{
+    padding: 0;
+}
+.footer{
+    background: #F2F9FF;
+}
+.footer-info{
+    padding: 89px 0;
+}
+.foot-tit{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #262A4E;
+}
+.foot-links{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 40px;
+color: #646464;
+
+}
+.foot-links:hover{
+ color: #2370C8;   
+}
+
+
+
+  .menu_ul.active {
+        transform: translateY(-0%);
+    }
+
+
+@media(max-width:992px){
+    .burger__line{
+        display: block;
+    }
+    .menu_ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        transition: 1s;
+        z-index: 1000000;
+        transform: translateY(-100%);
+        background: rgba(0, 0, 0, 0.808);
+        padding: 0;
+        margin: 0;
+    }
+  .block{
+      width: 48%;
+      margin: 5px auto;
+  }
+  .left, .right{
+      margin: 15px auto;
+  }
+}
+
+@media(max-width:767px){
+    .infos{
+        flex-direction: column;
+    }
+    .controls{
+        margin: auto;
+    }
+    .h1{
+        font-size: 50px;
+        line-height: 58px;
+        width: 100%;
+    }
+    .divvi{
+        display: none!important;
+    }
+    input{
+        display: none;
+    }
+    h4{
+        font-size: 26px;
+        line-height: 30px; 
+        margin-bottom: 15px; 
+    }
+    .info-txt{
+        width: 100%;
+    }
+    .our, .ourtxt{
+        font-size: 18px;
+    }
+    .inner{
+        margin: auto;
+    }
+    h3, .tit{
+        font-size: 26px;
+line-height: 30px;
+    }
+    .blocks{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .lemon{
+        margin-bottom: 60px;
+    }
+    .teachers{
+        margin-bottom: 60px;
+    }
+    .about{
+        margin-bottom: 60px;
+    }
+    .mb{
+        margin-bottom: 60px;
+    }
+    .regtangle{
+width: 48%;
+    }
+    .trener, .pricecard{
+        width: 48%;
+        margin: 5px auto;
+    }
+    .clients{
+        padding: 30px 0 20px;
+    }
+    .client{
+        width: 60%;
+        margin: 5px auto;
+            }
+            .priceinfo{
+                flex-direction: column;
+            }
+            .txts{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+            .ourlinks{
+                width: 48%;
+            } 
+            .footul, .foot-tit{
+                margin: auto;
+                margin-top: 10px;
+            }           
+            .footerinfo{
+                        width: 100%;
+                    }
+                    .cardi{
+                        width: 48%;
+                    }
+
+        }
+@media(max-width:467px){
+    .block{
+        width: 100%;
+        margin: 5px auto;
+    }
+    .regtangle{
+        width: 100%;
+            }
+            .trener, .pricecard{
+                width: 100%;
+                margin: 5px auto;
+            }
+            .cardi{
+                width: 100%;
+            }
+            .client{
+                width: 100%;
+                margin: 5px auto;
+                    }
+                    .ourlinks{
+                        width: 100%;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .learn{
+                        padding: 8px 10px;
+                        font-size: 15px;
+                    }
+                    .date{
+                        font-size: 15px;
+                    }
+                    .bigger{
+                        width: 46px;
+                        height: 18px;
+                    }
+                    .roll{
+                        width: 23px;
+                        height: 23px;
+                    }
+       
+}

@@ -1,0 +1,15 @@
+@import 'lite-purple.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import "perfect-scrollbar.min.css";
+@import "~bootstrap-tagsinput/dist/bootstrap-tagsinput-typeahead.css";
+@import "~bootstrap-tagsinput/dist/bootstrap-tagsinput.css";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap";
+
+button {
+    cursor: pointer;
+}
+
+.main-header .logo img {
+    height: 100% !important;
+    width: 100px !important;
+}
